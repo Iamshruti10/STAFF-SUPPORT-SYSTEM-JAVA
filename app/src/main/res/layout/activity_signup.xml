@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".SignupActivity"
+    android:textAlignment="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/SignUp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            android:text="SignUp Here"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edittext"
+            android:backgroundTint="#B4E6E0E3"
+            android:textColorHint="#666767"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="80dp"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:hint="Username"
+            android:drawableLeft="@drawable/baseline_name_24"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/mb_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edittext"
+            android:backgroundTint="#B4E6E0E3"
+            android:textColorHint="#666767"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:hint="Mobile Number"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/SignEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edittext"
+            android:backgroundTint="#B4E6E0E3"
+            android:textColorHint="#666767"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:hint="Email.ID"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/SignPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edittext"
+            android:backgroundTint="#B4E6E0E3"
+            android:textColorHint="#666767"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/baseline_pwd_24"
+            android:textColor="@color/black"/>
+
+        <!--    -->
+        <!--    <ProgressBar-->
+        <!--        android:id="@+id/ProgessBar"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content" -->
+        <!--        android:visibility="gone"-->
+        <!--        tools:ignore="MissingConstraints" />-->
+
+        <Button
+            android:id="@+id/DosignIN"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#2781ED"
+            android:gravity="center"
+            android:text="SIGNUP"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>
+

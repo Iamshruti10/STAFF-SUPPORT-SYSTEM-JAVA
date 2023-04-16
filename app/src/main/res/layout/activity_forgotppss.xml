@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotppssActivity"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/forpwd_img"
+            android:layout_width="140dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/forgotpwd_img"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="FORGOT PASSWORD?"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:layout_below="@+id/forpwd_img"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter registered email to receive password reset link"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:id="@+id/headline"
+            android:layout_below="@id/head"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset_password"
+            android:layout_below="@id/headline"
+            android:text="Email*"
+
+            android:layout_marginTop="40dp"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:textColor="#555555" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_reset_password_email"
+            android:layout_below="@+id/reset_password"
+            android:hint="Enter Registered Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@drawable/border_edittext"
+            android:backgroundTint="#B4E6E0E3"
+            android:textColorHint="#666767"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_reset_password"
+            android:layout_below="@+id/editText_reset_password_email"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:text="Reset Password"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+

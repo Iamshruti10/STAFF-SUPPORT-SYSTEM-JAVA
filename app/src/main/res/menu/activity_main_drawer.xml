@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/dashboard_icon"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_gallery"
+            android:icon="@drawable/attendance_icon"/>
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="@string/menu_slideshow"
+            android:icon="@drawable/lesson_plan_icon"/>
+
+        <item
+            android:id="@+id/nav_Progress_report"
+            android:title="PROGRESS REPORT"
+            android:icon="@drawable/progress_report_icon"/>
+
+        <item
+            android:id="@+id/nav_submission_report"
+            android:title="SUBMISSION REPORT"
+            android:icon="@drawable/submission_icon"/>
+
+    </group>
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/logtocontinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="1dp"
+            android:text="Login To Continue"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/LoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edittext"
+            android:backgroundTint="#B4E6E0E3"
+            android:textColorHint="#666767"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="10dp"
+            android:hint="Email or Mobile No"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:textColor="@color/black"
+            android:transitionName="Email or Mobile No"
+            />
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:id="@+id/hide_eye"-->
+<!--            android:layout_marginLeft="">-->
+
+        <EditText
+            android:id="@+id/LoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edittext"
+            android:textColorHint="#666767"
+            android:backgroundTint="#B4E6E0E3"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/baseline_pwd_24"
+            android:textColor="@color/black"
+            app:boxStrokeColor="#121111"/>
+
+        <TextView
+            android:id="@+id/forpwd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="20dp"
+            android:background="#00000000"
+            android:text="               Forgot Password??"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/LOGIN"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#2781ED"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/gotosignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Create a New Account"
+            android:textColor="#0B4386"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>
