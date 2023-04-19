@@ -11,7 +11,7 @@
         android:id="@+id/toolbarMain"
         layout="@layout/toolbar"/>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_main2"
+        android:id="@+id/fab_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -21,7 +21,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_below="@+id/toolbarMain"
-        android:id="@+id/recyclerView2"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />

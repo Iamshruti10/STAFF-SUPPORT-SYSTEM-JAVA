@@ -13,12 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.staffsupportsystem.Attendace_Activity;
-import com.example.staffsupportsystem.Lessonplan_activity;
 import com.example.staffsupportsystem.ProgressReport_activity;
 import com.example.staffsupportsystem.R;
 import com.example.staffsupportsystem.databinding.FragmentProgressReportBinding;
-import com.example.staffsupportsystem.databinding.FragmentSlideshowBinding;
 
 public class ProgressReportFragment extends Fragment {
     Button report;

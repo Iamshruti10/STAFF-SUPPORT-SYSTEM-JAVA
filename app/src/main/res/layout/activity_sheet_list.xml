@@ -7,8 +7,14 @@
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".SheetListActivity">
-<include
-    layout="@layout/toolbar"/>
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0252424"
+        android:titleMarginStart="120dp"
+        android:title="Monthly Record"
+        android:titleTextColor="@color/white" />
     
     <ListView
         android:id="@+id/sheetlist"

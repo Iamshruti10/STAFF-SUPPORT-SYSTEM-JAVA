@@ -43,7 +43,7 @@
         android:background="@drawable/border_edittext"
         android:backgroundTint="@android:color/white"
         android:shadowColor="@color/black"
-        android:text="Add a Note"
+        android:text="Add a Lessonplan"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"

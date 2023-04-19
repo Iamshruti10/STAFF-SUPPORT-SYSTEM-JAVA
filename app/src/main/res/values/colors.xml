@@ -10,5 +10,7 @@
     <color name="present">#3300C500</color>
     <color name="absent">#33FF0000</color>
     <color name="colorPrimaryDark">#E44438</color>
-
+    <color name="light_grey">#EEEEEE</color>
+    <color name="llightt_grey">#B7B7B7</color>
+    <color name="blue">#4C58C1</color>
 </resources>

@@ -1,11 +1,5 @@
 package com.example.staffsupportsystem;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -14,8 +8,13 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class StudentActivity extends AppCompatActivity {
 
@@ -38,7 +37,7 @@ public class StudentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
 
-       calendar = new MyCalendar();
+        calendar = new MyCalendar();
         dbHelper =new DbHelper(this);
         Intent intent = getIntent();
         className = intent.getStringExtra("className");
@@ -56,6 +55,7 @@ public class StudentActivity extends AppCompatActivity {
         recyclerView.setAdapter(studentAdapter);
         studentAdapter.setOnItemClickListener(position -> changeStatus(position));
         loadStatusData();
+
     }
 
     private void loadData() {
@@ -89,12 +89,12 @@ public class StudentActivity extends AppCompatActivity {
         ImageButton save = toolbar.findViewById(R.id.save);
         save.setOnClickListener(v->saveStatus());
         title.setText(className);
-       subtitle.setText(subjectName);
+        subtitle.setText(subjectName);
         subtitle.setText(subjectName+ " | "+ calendar.getDate());
 
-       back.setOnClickListener(v -> onBackPressed());
-       toolbar.inflateMenu(R.menu.student_menu);
-       toolbar.setOnMenuItemClickListener(menuItem->onMenuItemClick(menuItem));
+        back.setOnClickListener(v -> onBackPressed());
+        toolbar.inflateMenu(R.menu.student_menu);
+        toolbar.setOnMenuItemClickListener(menuItem->onMenuItemClick(menuItem));
 
 
 
@@ -104,10 +104,10 @@ public class StudentActivity extends AppCompatActivity {
         for(StudentItem studentItem :studentItems){
             String status = studentItem.getStatus();
             if(status != "P") status = "A";
-          long value = dbHelper.addStatus(studentItem.getSid(),cid,calendar.getDate(),status);
-          if(value == -1){
-              dbHelper.updateStatus(studentItem.getSid(),calendar.getDate(),status);
-          }
+            long value = dbHelper.addStatus(studentItem.getSid(),cid,calendar.getDate(),status);
+            if(value == -1){
+                dbHelper.updateStatus(studentItem.getSid(),calendar.getDate(),status);
+            }
         }
     }
 
@@ -129,14 +129,30 @@ public class StudentActivity extends AppCompatActivity {
             showCalendar();
         }
         else if (menuItem.getItemId()==R.id.show_attendance){
-          openSheetList();
+            openSheetList();
         }
         return true;
     }
 
     private void openSheetList() {
+        long[] idArray = new long[studentItems.size()];
+        String[] nameArray = new String[studentItems.size()];
+        int[] rollArray = new int[studentItems.size()];
+
+        for(int i = 0 ; i<idArray.length;i++)
+            idArray[i] = studentItems.get(i).getSid();
+
+        for(int i = 0 ; i<rollArray.length;i++)
+            rollArray[i] = studentItems.get(i).getRoll();
+
+        for(int i = 0 ; i< nameArray.length;i++)
+            nameArray[i] = studentItems.get(i).getName();
+
         Intent intent = new Intent(this,SheetListActivity.class);
         intent.putExtra("cid",cid);
+        intent.putExtra("idArray" ,idArray);
+        intent.putExtra("rollArray" ,rollArray);
+        intent.putExtra("nameArray" ,nameArray);
         startActivity(intent);
 
     }
@@ -172,7 +188,7 @@ public class StudentActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case 0:
                 showUpdateStudentDialog(item.getGroupId());
-                
+
                 break;
             case 1:
                 deleteStudent(item.getGroupId());
