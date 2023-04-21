@@ -95,9 +95,6 @@ public class StudentActivity extends AppCompatActivity {
         back.setOnClickListener(v -> onBackPressed());
         toolbar.inflateMenu(R.menu.student_menu);
         toolbar.setOnMenuItemClickListener(menuItem->onMenuItemClick(menuItem));
-
-
-
     }
 
     private void saveStatus() {

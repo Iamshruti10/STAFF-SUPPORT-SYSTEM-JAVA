@@ -6,11 +6,8 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Build;
 
 import androidx.annotation.Nullable;
-
-import java.util.Date;
 
 public class DbHelper extends SQLiteOpenHelper {
     private static final int VERSION = 2;
@@ -190,5 +187,9 @@ private  static  final String STATUS_TABLE_NAME ="STATUS_TABLE";
     Cursor getDistinctMonths(long cid){
         SQLiteDatabase database = this.getReadableDatabase();
         return database.query(STATUS_TABLE_NAME,new String[]{DATE_KEY},C_ID+"="+cid,null,"substr ( "+ DATE_KEY+",4,7)",null,null);
+    }
+
+    public long addStudent(String name, String roll) {
+        return 0;
     }
 }

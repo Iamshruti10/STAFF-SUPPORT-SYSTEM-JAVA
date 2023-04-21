@@ -73,7 +73,7 @@ public class SubmissionReportActivity<item> extends AppCompatActivity {
         ImageButton back = toolbar.findViewById(R.id.back);
         ImageButton save = toolbar.findViewById(R.id.save);
 
-        title.setText("LessonPlan Section");
+        title.setText("Submission Section");
         subtitle.setVisibility(View.GONE);
         back.setVisibility(View.INVISIBLE);
         save.setVisibility(View.INVISIBLE);
