@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Programs">
+
+<!--    <Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/llightt_grey"-->
+<!--        android:titleTextColor="@color/black"-->
+<!--        android:textAlignment="center/>-->
+
+    <TextView
+        android:id="@+id/programs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Degree Programme"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/human"
+        android:text="General science and humanities"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/programs"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/computer"
+        android:text="Computer Science and Engineering"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/human"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:id="@+id/ENTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/computer"
+        android:text="Electronics and communication engineering"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/Electrical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ENTC"
+        android:text="Electrical engineering"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Electrical"
+        android:text="Civil engineering"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/mech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civil"
+        android:text="mechanical engineering"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/programs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diploma Programme"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mech"/>
+
+    <TextView
+        android:id="@+id/human2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/programs2"
+        android:text="General science and humanities"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ENTC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/human2"
+        android:text="Electronics and communication engineering"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/mech2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ENTC2"
+        android:text="mechanical engineering"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_circle_24"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/programs3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sports Activity"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mech2"/>
+
+
+    <TextView
+        android:id="@+id/programs4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workshop"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/programs3"/>
+</RelativeLayout>

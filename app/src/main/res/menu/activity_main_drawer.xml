@@ -28,6 +28,12 @@
             android:id="@+id/nav_submission_report"
             android:title="SUBMISSION REPORT"
             android:icon="@drawable/submission_icon"/>
+        <item
+            android:id="@+id/nav_videocall"
+            android:title="VIDEO CONFERENCE"
+            android:icon="@drawable/baseline_video_call_24"/>
+
+
 
     </group>
 </menu>

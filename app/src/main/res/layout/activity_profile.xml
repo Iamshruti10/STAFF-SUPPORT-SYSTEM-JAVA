@@ -18,19 +18,19 @@
           android:layout_height="250dp"
         android:background="@color/black">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/user_img1"
-            android:layout_centerInParent="true"
-            android:background="@drawable/no_profile_img"/>
+          <ImageView
+              android:id="@+id/user_img1"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:layout_centerInParent="true"
+              android:background="@drawable/vaishnavi" />
 
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:id="@+id/textview_show_welcome"
               android:layout_below="@+id/user_img1"
-              android:hint="Loading..."
+              android:hint="Welcome..Vaishnavi!!"
               android:layout_marginTop="5dp"
               android:textAppearance="@style/TextAppearance.AppCompat.Headline"
               android:textColor="@color/white"
@@ -52,6 +52,8 @@
               android:layout_marginStart="50dp"
               android:drawableLeft="@drawable/baseline_name_24"
               android:drawablePadding="15dp"
+              android:textColor="@color/black"
+              android:text="Vaishni Gavdde"
               android:hint="Loading...."
               android:textSize="18dp" />
 
@@ -73,6 +75,8 @@
               android:drawablePadding="15dp"
               android:layout_below="@id/divider_name"
               android:layout_marginTop="15dp"
+              android:textColor="@color/black"
+              android:text="8888219235"
               android:hint="Loading...."
               android:textSize="18dp" />
 
@@ -91,6 +95,8 @@
               android:layout_marginStart="50dp"
               android:drawableLeft="@drawable/baseline_email_24"
               android:drawablePadding="15dp"
+              android:textColor="@color/black"
+              android:text="gavadevaishni65@gmail.com"
               android:layout_below="@id/divider_phn_no"
               android:layout_marginTop="0dp"
               android:hint="Loading...."

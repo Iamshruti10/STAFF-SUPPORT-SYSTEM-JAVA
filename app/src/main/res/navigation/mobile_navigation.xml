@@ -34,4 +34,13 @@
         android:name="com.example.staffsupportsystem.ui.submissionReport.SubmissionReportFragment"
         android:label="SUBMISSION REPORT"
         tools:layout="@layout/fragment_submission_report" />
+
+
+    <fragment
+        android:id="@+id/nav_videocall"
+        android:name="com.example.staffsupportsystem.ui.videocall.VideocallFragment"
+        android:label="VIDEO CONFERENCE"
+        tools:layout="@layout/fragment_videocall" />
+
+
 </navigation>

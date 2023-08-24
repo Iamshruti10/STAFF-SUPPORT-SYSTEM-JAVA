@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_submission"
+        android:title="New Submission??"/>
+
+    <item
+        android:id="@+id/Set_date"
+        android:title="Set a Date"/>
+
+</menu>

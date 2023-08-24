@@ -36,27 +36,24 @@ public class Lessonplan_activity<item> extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_attendace);
+        setContentView(R.layout.activity_lessonplan);
 
         dbHelper = new DbHelper(this);
 
-        fab =  findViewById(R.id.fab_main);
+        fab =  findViewById(R.id.fab_main1);
         fab.setOnClickListener(v-> showDialog());
 
         loadData();
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView1);
         recyclerView.setHasFixedSize(true);
-        Intent intent = getIntent();
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        cid = intent.getLongExtra("cid",-1);
 
         classAdpter = new ClassAdpter(this,classItems);
         recyclerView.setAdapter(classAdpter);
         classAdpter.setOnItemClickListener(position -> gotoItemActivity(position));
         setToolbar();
     }
-
     private void loadData() {
 
         Cursor cursor = dbHelper.getClassTable();

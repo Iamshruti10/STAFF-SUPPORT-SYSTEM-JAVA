@@ -1,7 +1,6 @@
 package com.example.staffsupportsystem;
 
 import android.app.Dialog;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +18,9 @@ public class MyDialog extends DialogFragment {
     public static final String CLASS_UPDATE_DIALOG = "updateClass";
     public static final String STUDENT_ADD_DIALOG = "addstudent";
     public static final String STUDENT_UPDATE_DIALOG ="updateStudent" ;
+
+    public static final String ADD_SUBMISSION_DIALOG ="addsubmission" ;
+
 
     private OnclickListener Listener;
     private int roll;
@@ -49,8 +51,37 @@ public class MyDialog extends DialogFragment {
     if(getTag().equals(STUDENT_ADD_DIALOG))dialog =  getAddStudentDialog();
     if(getTag().equals(CLASS_UPDATE_DIALOG))dialog =  getUpdateClassDialog();
     if(getTag().equals(STUDENT_UPDATE_DIALOG))dialog =  getUpdateStudentDialog();
-//    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.g));
+    if(getTag().equals(ADD_SUBMISSION_DIALOG))dialog =  getSubmissionDialog();
     return dialog;
+    }
+
+    private Dialog getSubmissionDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.dialog,null);
+        builder.setView(view);
+
+
+        TextView title =  view.findViewById(R.id.titleDialog);
+        title.setText("New Submission");
+
+        EditText  Sub_name= view.findViewById(R.id.est01);
+        EditText date = view.findViewById(R.id.edt02);
+
+        Sub_name .setHint("Submission Name");
+        date.setHint("Submtting On");
+        Button cancel = view.findViewById(R.id.cancel_btn);
+        Button add =  view.findViewById(R.id.Add_btn);
+
+        cancel.setOnClickListener(v-> dismiss());
+        add.setOnClickListener(v ->{
+            String roll = Sub_name .getText().toString();
+            String name = date.getText().toString();
+            Sub_name.setText("");
+            date.setText("");
+            Listener.onClick(roll,name);
+        });
+
+        return builder.create();
     }
 
     private Dialog getUpdateStudentDialog() {
@@ -112,6 +143,7 @@ public class MyDialog extends DialogFragment {
         });
         return builder.create();
     }
+
 
     private Dialog getAddStudentDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());

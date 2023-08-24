@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".About_us">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About The Project"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/clg_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       Nowadays, every department has a large database to maintain, ini-
+tializing from exam paper preparations to results, from student’s
+details to faculty attendance, from project reports to extra activ-
+ities, departments also generate a big database even in a month.
+Thus, in order to maintain such database and even to handle such
+kind of large activities, we need to have some automatically work-
+ing system, which does not require much labor work and can be
+done easily. This staff support system is being generated for such
+purpose only to maintain all the work power of the department in
+a single database. This model will also be able to solve the prob-
+lem of time as the current system is very time consuming and this
+project is being developed keeping in mind time problem. This
+is paperless work. It can monitored and controlled remotely it re-
+duce man power required. It provides accurate information always.
+Malpractice can be reduced. All gathered and extra information
+can be saved and can be accessed at any time. The data which is
+stored in the project helps in taking intelligent and quick decisions
+by the management. So it is better to have a App-Based Informa-
+tion Management system. All the stakeholders, staff members can
+get the desired information without delay."
+        android:layout_below="@id/aboutUs"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+</ScrollView>

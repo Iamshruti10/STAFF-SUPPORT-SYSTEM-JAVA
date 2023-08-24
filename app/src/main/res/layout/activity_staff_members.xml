@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".staff_members">
+
+    <TextView
+        android:id="@+id/staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Professors."
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textStyle="bold|italic"
+        android:textSize="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/staff"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/staff0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/staff"
+            app:srcCompat="@drawable/deo_sir" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prof. G.H.Deo"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:id="@+id/staffname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assistent Professor"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="-130dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/staff"
+    android:layout_marginTop="120dp">
+
+    <ImageView
+        android:id="@+id/staff1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/staff"
+        app:srcCompat="@drawable/shruti" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shruti Dixit"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <TextView
+        android:id="@+id/staffname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTech CSE"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="-100dp"
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/staff"
+        android:layout_marginTop="280dp">
+
+        <ImageView
+            android:id="@+id/staff2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/staffname"
+            app:srcCompat="@drawable/roshni" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roshni Bhilare"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:id="@+id/staffname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTech CSE"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="-130dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/staff"
+        android:layout_marginTop="430dp">
+
+        <ImageView
+            android:id="@+id/staff3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/staffname"
+            app:srcCompat="@drawable/vaishnavi" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaishnavi Gavade"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:id="@+id/staffname5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTech CSE"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="-160dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

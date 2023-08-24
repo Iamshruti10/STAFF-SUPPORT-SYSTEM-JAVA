@@ -1,6 +1,5 @@
 package com.example.staffsupportsystem;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -29,7 +28,7 @@ public class SubmissionReportActivity<item> extends AppCompatActivity {
 
 
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

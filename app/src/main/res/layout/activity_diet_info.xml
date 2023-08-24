@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Diet_info">
+
+    <ImageView
+        android:id="@+id/clg_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/clg_logo" />
+
+    <ImageView
+        android:id="@+id/clg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clg_logo"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/clg_name" />
+
+    <TextView
+        android:id="@+id/clg_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     Raosaheb Wangde Master Charitable Trust’s “Dnyanshree Institute of Engineering and Technology (DIET)”, Sajjangad Road, Satara, a well-known Engineering Institute, was founded in 2012 by great visionary Hon. Chairman Mr. Dnyaneshwar B. Wangde (Bhai). The Institute is situated at the base of historic fort ‘Sajjangad’ and its campus has recognition for its pollution- free ambience. The surrounding natural landscape increases the beauty of the campus."
+        android:layout_below="@id/clg_name"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/content1"
+        android:text="World Class Campus"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/clg_info"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_campus"
+        android:textColor="@color/blue"
+        android:drawablePadding="10dp"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/content2"
+        android:text="#1 Placements in Satara"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/content1"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_placement"
+        android:textColor="@color/blue"
+        android:drawablePadding="10dp"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/content3"
+        android:text="100+ Academic Excellence"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/content2"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/progress_report_icon"
+        android:textColor="@color/blue"
+        android:drawablePadding="10dp"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/content4"
+        android:text="Digitally Equipped Learning"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/content3"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/baseline_computer_24"
+        android:textColor="@color/blue"
+        android:drawablePadding="10dp"/>
+
+
+</RelativeLayout>

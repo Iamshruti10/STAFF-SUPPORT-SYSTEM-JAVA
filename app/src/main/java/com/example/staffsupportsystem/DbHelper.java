@@ -74,7 +74,6 @@ private  static  final String STATUS_TABLE_NAME ="STATUS_TABLE";
 
 
 
-
     public DbHelper(@Nullable Context context) {
 
         super(context, "Attendance.db", null, VERSION);

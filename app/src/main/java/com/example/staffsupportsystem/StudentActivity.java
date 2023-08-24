@@ -29,8 +29,8 @@ public class StudentActivity extends AppCompatActivity {
 
     private DbHelper dbHelper;
     private long cid;
-    private   MyCalendar calendar ;
-    private     TextView subtitle ;
+    private MyCalendar calendar ;
+    private TextView subtitle ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

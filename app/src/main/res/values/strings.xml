@@ -5,8 +5,7 @@
     <string name="title_activity_home1">HomeActivity1</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -24,4 +23,16 @@
     <string name="verify_phone">Verify phone</string>
     <string name="signup">SIGNUP</string>
     <string name="login_to_continue">Login to continue</string>
+    <string name="sttitle">PROGRESS REPORT</string>
+    <string name="studentname"> Student Name :  </string>
+    <string name="rollno"> Roll No. :     </string>
+    <string name="ut1"> Unit Test 1 :      </string>
+    <string name="mid"> Mid Semester :    </string>
+    <string name="ut2"> Unit Test 2 :      </string>
+    <string name="total"> Total :         </string>
+    <string name="cgpa"> CGPA :           </string>
+    <string name="percent"> Percentage:   </string>
+    <string name="ok"> Calculate  </string>
+    <string name="clear"> Clear </string>
+    <string name="video_conference">VIDEO CONFERENCE</string>
 </resources>
