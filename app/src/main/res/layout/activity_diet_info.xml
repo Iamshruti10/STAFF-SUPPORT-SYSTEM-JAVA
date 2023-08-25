@@ -7,93 +7,110 @@
     android:background="@color/white"
     tools:context=".Diet_info">
 
-    <ImageView
-        android:id="@+id/clg_logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="5dp"
-        app:srcCompat="@drawable/clg_logo" />
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view">
+    </View>
 
-    <ImageView
-        android:id="@+id/clg_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/clg_logo"
-        android:layout_marginTop="14dp"
-        app:srcCompat="@drawable/clg_name" />
+
 
     <TextView
-        android:id="@+id/clg_info"
+        android:id="@+id/att_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="     Raosaheb Wangde Master Charitable Trust’s “Dnyanshree Institute of Engineering and Technology (DIET)”, Sajjangad Road, Satara, a well-known Engineering Institute, was founded in 2012 by great visionary Hon. Chairman Mr. Dnyaneshwar B. Wangde (Bhai). The Institute is situated at the base of historic fort ‘Sajjangad’ and its campus has recognition for its pollution- free ambience. The surrounding natural landscape increases the beauty of the campus."
-        android:layout_below="@id/clg_name"
-        android:layout_marginTop="50dp"
-        android:textColor="@color/black"
-        android:textSize="18sp"
+        android:text="From Concept to Completion: Unraveling Dynamics"
+        android:textColor="@color/white"
+        android:textSize="24dp"
         android:textStyle="italic"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"/>
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"/>
 
     <TextView
-        android:layout_height="wrap_content"
+        android:id="@+id/concept"
         android:layout_width="wrap_content"
-        android:id="@+id/content1"
-        android:text="World Class Campus"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_view"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/clg_info"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_campus"
-        android:textColor="@color/blue"
-        android:drawablePadding="10dp"/>
-
+        android:layout_marginLeft="20dp"
+        android:text="Concept:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <TextView
-        android:layout_height="wrap_content"
+        android:id="@+id/concept_view"
         android:layout_width="wrap_content"
-        android:id="@+id/content2"
-        android:text="#1 Placements in Satara"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/content1"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_placement"
-        android:textColor="@color/blue"
-        android:drawablePadding="10dp"/>
-
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/concept"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:text="This application has 1st module attendance system in which staff members
+can take daily attendance of students in each class.We can generate the
+attendance in pdf format by doing monthly calculations."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
 
     <TextView
-        android:layout_height="wrap_content"
+        android:id="@+id/steps"
         android:layout_width="wrap_content"
-        android:id="@+id/content3"
-        android:text="100+ Academic Excellence"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/content2"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/progress_report_icon"
-        android:textColor="@color/blue"
-        android:drawablePadding="10dp"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/concept_view"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"
+        android:text="How does the Attend system works?:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
 
 
     <TextView
-        android:layout_height="wrap_content"
+        android:id="@+id/step1_view"
         android:layout_width="wrap_content"
-        android:id="@+id/content4"
-        android:text="Digitally Equipped Learning"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/content3"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_computer_24"
-        android:textColor="@color/blue"
-        android:drawablePadding="10dp"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/steps"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:text="Step 1 -Enter into the attendancesystem
+                            Step 2 - Create a class with class name and subject name by clicking on the
+ add button                                  Step 3 - Enter the class and click on the right side tool bar"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/step2_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/step1_view"
+        android:layout_marginLeft="35dp"
+        android:text="Step 4 - Click on the Add Student option and enter the roll number and
+student name to create students in the class.Up to this point, the process
+has to be done once and there is no need to repeat it"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/step3_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/step2_view"
+        android:layout_marginLeft="35dp"
+        android:text="Step 5- When the professor wants to take attendance of the class, they can
+call each student’s roll number or name and click Absent Present.
+                                 Step 6 - After that, the attendance of that day must be save by clicking on
+save button hence it will be added in the monthly report sheet"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+
 
 
 </RelativeLayout>
+

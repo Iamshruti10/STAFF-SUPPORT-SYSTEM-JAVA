@@ -35,7 +35,7 @@ public class SheetSubmissionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_progress_report);
+        setContentView(R.layout.activity_sheet_submission);
 
         dbHelper = new DbHelper(this);
 

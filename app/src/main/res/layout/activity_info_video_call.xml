@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".About_us">
+    tools:context=".infoVideoCall">
 
 
     <View
@@ -18,7 +17,7 @@
 
 
     <TextView
-        android:id="@+id/video_title"
+        android:id="@+id/att_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="From Concept to Completion: Unraveling Dynamics"
@@ -30,7 +29,7 @@
         android:layout_marginTop="70dp"/>
 
     <TextView
-        android:id="@+id/conceptVc"
+        android:id="@+id/concept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/top_view"
@@ -42,25 +41,27 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/conceptvc_view"
+        android:id="@+id/concept_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/conceptVc"
+        android:layout_below="@+id/concept"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="35dp"
-        android:text="Progress report is the 3rd module in this application in which the progress
-of each student is maintained. Exams are conducted from unit test to midsem
-and endsem in academic schedules. The percentage and CGPA are calculated
+        android:text="Video conferencing is the last module of this application in which the
+college staff can hold virtual meetings. The staff of each department has
+meetings a few times a week but if a teacher is not physically able to attend
+the meeting, they can attend the meeting with the help of this application.
+
 "
         android:textColor="@color/black"
         android:textSize="15dp"
         />
 
     <TextView
-        android:id="@+id/stepsvc"
+        android:id="@+id/steps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/conceptvc_view"
+        android:layout_below="@+id/concept_view"
         android:layout_marginTop="12dp"
         android:layout_marginLeft="18dp"
         android:text="How does the Attend system works?:"
@@ -71,16 +72,15 @@ and endsem in academic schedules. The percentage and CGPA are calculated
 
 
     <TextView
-        android:id="@+id/stepvc_view"
+        android:id="@+id/step1_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/stepsvc"
+        android:layout_below="@+id/steps"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="35dp"
-        android:text="Step 1 - Enter into the attendance system
-                        Step 2 - Create a class with class name and subject name by clicking on the
-add button
-                               Step 3 - Enter the class and click on the right side tool bar"
+        android:text="Step 1 - Go to Video Conference Module
+                         Step 2 - Create a class room with a name
+"
         android:textColor="@color/black"
         android:textSize="15dp"
         />
@@ -89,28 +89,13 @@ add button
         android:id="@+id/step2_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/stepvc_view"
+        android:layout_below="@+id/step1_view"
         android:layout_marginLeft="35dp"
-        android:text="Step 4 - Click on the Add Student option and enter the roll number and
-student name to create students in the class.Up to this point, the process
-has to be done once and there is no need to repeat it.
-                                    Step 5 - Click on the cratered student"
-        android:textColor="@color/black"
+        android:text="Step 3 - And join that class room
+                                     Step 4 - Then your meeting will start
+" android:textColor="@color/black"
         android:textSize="15dp"/>
 
-    <TextView
-        android:id="@+id/step3_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/step2_view"
-        android:layout_marginLeft="35dp"
-        android:text="Step 7- Selected students should submit marks of Unit Test-1, Unit Test-2
-and Mid Sem.
-Step 8 - And by clicking on ok button you will automatically get Total,
-percentage, and CGPA
-Step 9 - Click on save button to save all the data."
-        android:textColor="@color/black"
-        android:textSize="15dp"/>
 
 
 </RelativeLayout>

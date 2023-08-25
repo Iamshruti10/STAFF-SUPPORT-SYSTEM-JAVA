@@ -16,6 +16,8 @@ import com.example.staffsupportsystem.Diet_info;
 import com.example.staffsupportsystem.Programs;
 import com.example.staffsupportsystem.R;
 import com.example.staffsupportsystem.databinding.FragmentHomeBinding;
+import com.example.staffsupportsystem.infoSubmission;
+import com.example.staffsupportsystem.infoVideoCall;
 import com.example.staffsupportsystem.staff_members;
 
 public class HomeFragment extends Fragment {
@@ -30,8 +32,7 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-       imageView = root.findViewById(R.id.dbimg1);
+       imageView = root.findViewById(R.id.att1);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +40,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        imageView = root.findViewById(R.id.dbimg2);
+        imageView = root.findViewById(R.id.lsspln1);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +48,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        imageView = root.findViewById(R.id.dbimg3);
+        imageView = root.findViewById(R.id.progress1);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,11 +57,27 @@ public class HomeFragment extends Fragment {
         });
 
 
-        imageView = root.findViewById(R.id.dbimg4);
+        imageView = root.findViewById(R.id.staffmembr1);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), staff_members.class));
+            }
+        });
+
+        imageView = root.findViewById(R.id.video1);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), infoVideoCall.class));
+            }
+        });
+
+        imageView = root.findViewById(R.id.submsn1);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), infoSubmission.class));
             }
         });
         return root;
@@ -70,5 +87,6 @@ public class HomeFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+
     }
 }

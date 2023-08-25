@@ -7,191 +7,98 @@
     android:background="@color/white"
     tools:context=".Programs">
 
-<!--    <Toolbar-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:background="@color/llightt_grey"-->
-<!--        android:titleTextColor="@color/black"-->
-<!--        android:textAlignment="center/>-->
-
-    <TextView
-        android:id="@+id/programs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Degree Programme"
-        android:textAlignment="textStart"
-        android:textColor="@color/blue"
-        android:textStyle="bold|italic"
-        android:textSize="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"/>
+ <View
+     android:id="@+id/top_view"
+     android:layout_width="match_parent"
+     android:layout_height="200dp"
+     android:background="@drawable/bg_view">
+ </View>
 
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:id="@+id/human"
-        android:text="General science and humanities"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/programs"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"/>
+
+ <TextView
+     android:id="@+id/att_title"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="From Concept to Completion: Unraveling Dynamics"
+     android:textColor="@color/white"
+     android:textSize="24dp"
+     android:textStyle="italic"
+     android:gravity="center"
+     android:layout_marginStart="20dp"
+     android:layout_marginTop="70dp"/>
+
+ <TextView
+     android:id="@+id/concept"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/top_view"
+     android:layout_marginTop="20dp"
+     android:layout_marginLeft="20dp"
+     android:text="Concept:"
+     android:textColor="@color/black"
+     android:textSize="20dp"
+     android:textStyle="bold"/>
+
+ <TextView
+     android:id="@+id/concept_view"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/concept"
+     android:layout_marginTop="15dp"
+     android:layout_marginLeft="35dp"
+     android:text="Lesson plan is another module in our app that comes in handy for teachers
+for their daily lesson plans for their classes. It is necessary for the teachers to
+decide what they are going to teach today and give information to hod. And
+in this app we have made this process very easy. Teachers can save monthly
+record by planning daily bases.
+"
+     android:textColor="@color/black"
+     android:textSize="15dp"
+     />
+
+ <TextView
+     android:id="@+id/steps"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/concept_view"
+     android:layout_marginTop="12dp"
+     android:layout_marginLeft="18dp"
+     android:text="How does the Attend system works?:"
+     android:textColor="@color/black"
+     android:textSize="20dp"
+     android:textStyle="bold"/>
 
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:id="@+id/computer"
-        android:text="Computer Science and Engineering"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/human"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"/>
 
-    <TextView
-        android:id="@+id/ENTC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/computer"
-        android:text="Electronics and communication engineering"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
+ <TextView
+     android:id="@+id/step1_view"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/steps"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="35dp"
+     android:text="Step 1 - Enter into the LessonPlan system
+                        Step 2 - Create a class with class name and subject name by clicking on the
+add buttonck on the right side tool bar"
+     android:textColor="@color/black"
+     android:textSize="15dp"
+     />
 
-    <TextView
-        android:id="@+id/Electrical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ENTC"
-        android:text="Electrical engineering"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:id="@+id/civil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Electrical"
-        android:text="Civil engineering"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:id="@+id/mech"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/civil"
-        android:text="mechanical engineering"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:id="@+id/programs2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diploma Programme"
-        android:textAlignment="textStart"
-        android:textColor="@color/blue"
-        android:textStyle="bold|italic"
-        android:textSize="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/mech"/>
-
-    <TextView
-        android:id="@+id/human2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/programs2"
-        android:text="General science and humanities"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:id="@+id/ENTC2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/human2"
-        android:text="Electronics and communication engineering"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:id="@+id/mech2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ENTC2"
-        android:text="mechanical engineering"
-        android:layout_marginStart="80dp"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:drawableLeft="@drawable/baseline_circle_24"
-        android:textColor="@color/black"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="10dp"/>
+ <TextView
+     android:id="@+id/step2_view"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/step1_view"
+     android:layout_marginLeft="35dp"
+     android:text="Step 3 - When we click on the add button, we get the option to add our
+lesson plan, we can create a lesson plan by adding the due date on it.
+                                    Step 4- You can also perform edit and delete operations on it."
+     android:textColor="@color/black"
+     android:textSize="15dp"
+     />
 
 
-    <TextView
-        android:id="@+id/programs3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sports Activity"
-        android:textAlignment="textStart"
-        android:textColor="@color/blue"
-        android:textStyle="bold|italic"
-        android:textSize="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/mech2"/>
 
 
-    <TextView
-        android:id="@+id/programs4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Workshop"
-        android:textAlignment="textStart"
-        android:textColor="@color/blue"
-        android:textStyle="bold|italic"
-        android:textSize="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/programs3"/>
 </RelativeLayout>

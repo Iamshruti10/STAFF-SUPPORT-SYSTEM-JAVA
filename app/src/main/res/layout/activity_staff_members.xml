@@ -5,26 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-
     tools:context=".staff_members">
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@drawable/bg_view">
+    </View>
+
+
 
     <TextView
-        android:id="@+id/staff"
-        android:layout_width="match_parent"
+        android:id="@+id/att_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Our Professors."
-        android:textAlignment="textStart"
-        android:textColor="@color/blue"
-        android:textStyle="bold|italic"
+        android:textColor="@color/white"
         android:textSize="35dp"
+        android:textStyle="italic"
+        android:gravity="center"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="50dp"/>
+
+
 
     <LinearLayout
+        android:id="@+id/dev"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/staff"
+        android:layout_below="@+id/top_view"
         android:layout_marginTop="15dp">
 
         <ImageView
@@ -32,7 +42,6 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginStart="10dp"
-            android:layout_below="@id/staff"
             app:srcCompat="@drawable/deo_sir" />
         <TextView
             android:layout_width="wrap_content"
@@ -60,18 +69,18 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/shruti"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_below="@+id/staff"
-    android:layout_marginTop="120dp">
+    android:layout_below="@+id/dev"
+    android:layout_marginTop="20dp">
 
     <ImageView
         android:id="@+id/staff1"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="10dp"
-        android:layout_below="@id/staff"
         app:srcCompat="@drawable/shruti" />
     <TextView
         android:layout_width="wrap_content"
@@ -100,11 +109,12 @@
 </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/Roshni"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/staff"
-        android:layout_marginTop="280dp">
+        android:layout_below="@+id/shruti"
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:id="@+id/staff2"
@@ -138,11 +148,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/vaishnivi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/staff"
-        android:layout_marginTop="430dp">
+        android:layout_below="@+id/Roshni"
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:id="@+id/staff3"
